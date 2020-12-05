@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 
 <html lang="es">
+   
 
 <head>
     <meta charset="UTF-8">
     <title>Sierra Tours</title>
      <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
 <body>
-        <div class="fondo-cabecera">
-        
-            <table class="tabla">
-                <tr>
-                    <td> 
-                        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo Sierra Tours"></a>
-                    </td>
-                    <td class="t-letra2 titulo">Sierra Tours</td>
-
-                    <td style="width: 33%;">          
-                        <label class="t-letra2 txt-usuario">Usuario:</label>
-                        <label class="t-letra txt-invitado">Invitado</label>           
-                    </td>           
-                </tr>  
-            </table>
-        </div>
+    <header class="fondo-cabecera">
+        <div class="cabecera">
+            <div class="contenido-barra">
+                <a href="#">
+                <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
+                </a>
+                <span class="titulo t-letra2">Sierra Tours</span>
+                <div>
+                 <label class="stroke2" style="font-size: 18pt;">Usuario: <span class="stroke" style="font-size: 16pt;">Invitado</span></label>
+                </div>
+            </div>
+      
         <div id="header" >
             <ul class="nav">                    
                   <li><a href="index.html"> Inicio</a></li>
@@ -34,24 +33,28 @@
                     <ul>
                         <li><a herf="#">Madera</a>        
                             <ul>
-                                <li><a href="#"> Huapoca</a></li>
+                                <li><a href="huapoca.html"> Huapoca</a></li>
                             </ul>
                         </li>
                     
-                        <li class=""><a herf="">Sierra Tarahumara</a>
+                        <li class="p-creel"><a herf="">Sierra Tarahumara</a>
                             <ul> 
-                                <li><a href="#">Creel</a></li>
-                                <li><a href="#">Barrancas del Cobre</a></li>  
+                                <li><a href="creel.html">Creel</a></li>
+                                <li><a href="barrancas.html">Barrancas del Cobre</a></li>  
                             </ul>  
                         </li>
                 </li>         
         </ul>
-                <li><a href="#">Registrarse</a></li>
-                <li><a href="#">Iniciar Sesion</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
         </div>
+    </div>
+ </header>
 
-        <div class="img-creel" >
+       <h1 class="centrar-texto tamaño-titulo">Creel Pueblo Mágico</h1>
+        <div class="imagenes" >
             <img src="img/creelbarra.jpg">   
         </div>
 
@@ -59,7 +62,6 @@
          
 <main class="contenedor">
   
-    <h1 class="titulo1">Barrancas del Cobre, Creel Chih.</h1>
     <div class="informacion">
         <p class="cuerpo1">
             Creel se asienta sobre la esplendorosa Sierra Madre Occidental, 247 
@@ -74,7 +76,7 @@
     
     
     <div class="actividades">
-        <h2 class="caja1">ACTIVIDADES</h2>
+        <h2 class="caja">ACTIVIDADES</h2>
 
          <div class="acomodar">
              <img style="border-radius: 15px;" src=img/creelba.jpg >
