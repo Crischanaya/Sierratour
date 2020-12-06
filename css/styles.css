@@ -810,10 +810,13 @@
             margin-top: -1rem;
             color: #ffffff;
             background:#2E465B;
-            padding: 1rem 2rem 0 2rem;
+            padding: 1rem 4rem 0 2rem;
             text-align: justify;
             border-radius: 16px;
             width: auto;
+        }
+        .inf-pago h3{
+            text-align: center;
         }
         .inf-pago button{
             margin-left: 4rem;
