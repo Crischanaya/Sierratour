@@ -638,13 +638,12 @@
     
     /**CREEL*/
 
-     .fondo-cabecera{
-        background: url(../img/fondo-header.jpg);
-        background-position: no-repeat center;
-        background-size: cover;
-        height: 30vh;  
+    .fondo-cabecera{
+        background: url(../img/fondo-paginas.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
      }
-   
+
      .tamaño-titulo{
          font-size: 4rem;
          color: #666666;
