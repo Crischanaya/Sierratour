@@ -586,6 +586,10 @@
     }
 
    /** Pagina Nosotros **/
+
+   .espacio{
+       margin-top: 6rem;
+   }
    .cintillo {
         margin-top: -5rem;
         background-color: #2E465B;
@@ -596,16 +600,31 @@
 
    .centrado{
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 70%;
         font-family: 'Roboto Slab', serif;
         font-weight: 500 !important;
         color: white;
-        font-size: 50px !important;
+        font-size: 20px !important;
         text-align: right;
         text-shadow: 1px 1px 8px #969696;
         margin-top: 70px;
         transform: translate(-50%, -50%);
+    }
+    @media (min-width: 490px){
+        .centrado{
+            top: 60%;
+            left: 70%;
+            font-size: 30px !important;
+        }
+    }
+
+    @media (min-width: 1050px){
+        .centrado{
+            top: 50%;
+            left: 70%;
+            font-size: 50px !important;
+        }
     }
 
     .caja{
@@ -619,8 +638,16 @@
         padding: 20px;
         text-align: center;
     } 
+    .cuerpo-nosotros{
+        padding: 4rem;
+        text-align: justify;
+    }
+    .cuerpo-nosotros h2{
+        text-align: center;
+        width: 100%;
+    }
 
-    .cuerpo1 {
+   .cuerpo1 {
         font-size: 20px !important;
         font-family:Arial, Helvetica, sans-serif ;
         color: #272323 !important;
@@ -628,8 +655,13 @@
         font-weight: 700;
         line-height: 34px;
         margin: 0px;
-    }  
-
+        padding: 2rem;
+   }
+    .parrafo-nosotros{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
 
 
     .zoom1 {
@@ -656,10 +688,16 @@
     /**CREEL*/
 
     .fondo-cabecera{
-        background: url(../img/fondo-paginas.jpg);
+        background: url(../img/fondo-header.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed;
      }
+     @media (min-width: 1050px){
+        .fondo-cabecera{
+            background-size: contain;
+        }   
+    }
 
      .tamaño-titulo{
          font-size: 4rem;
@@ -670,7 +708,9 @@
 
      .imagenes{
          margin-top: 2rem;
-         margin-bottom: 4rem;    
+         margin-bottom: 4rem; 
+         display: table;
+         margin: 0 auto;   
      }
 
      .imagenes img{
@@ -831,15 +871,22 @@
     box-shadow: 0 0 1rem #0a281e;
     min-height: 10rem;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 90%;
     padding: 3rem;
     background-color: rgba(0, 0, 0, 0.65);
     color: rgb(255, 255, 255);
-     margin-bottom: 1rem;
-     margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    border-radius: 18px;
     }
 
-    
+    @media (min-width: 780px){
+        .login-pagina {
+            max-width: 50%;
+            } 
+    }
+
+
     .login-username, .login-password {
     background: rgba(255, 255, 255, 0.884);
     border: 0 solid;
@@ -848,7 +895,7 @@
     padding: 1rem;
     transition: 250ms background ease-in;
     width: calc(100% - 3rem);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 10px;
     }
     
@@ -872,8 +919,7 @@
         text-align: center;
         text-decoration: none;
         width: 50%;
-        margin: 0 auto;
-       
+        margin: 0 auto;   
     }
   .login-forgot-pass:hover {
      background-color: rgba(0, 0, 0, 0.829);
@@ -887,9 +933,10 @@
     display: block;
     margin: 4rem auto 0 auto;
     min-width: 1px;
-    padding: 1rem 2rem;
+    padding: 1.5rem 4rem;
     transition: 250ms background ease-in;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-radius: 18px;
     }
    
    .login-submit:hover
