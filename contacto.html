@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sierra Tours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="fondo-cabecera">
+        <div class="cabecera">
+            <div class="contenido-barra">
+                <a href="#">
+                <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
+                </a>
+                <span class="titulo t-letra2">Sierra Tours</span>
+                <div>
+                 <label class="stroke2" style="font-size: 18pt;">Usuario: <span class="stroke" style="font-size: 16pt;">Invitado</span></label>
+                </div>
+            </div>
+            <div class="menu-movil">
+                <a href="#"><i class="fas fa-bars"></i></a>
+             </div>
+        <div id="header" >
+            <ul class="nav">                    
+                  <li><a href="index.html"> Inicio</a></li>
+
+                <li><a herf="#">Destinos</a>
+                    <ul>
+                        <li><a herf="#">Madera</a>        
+                            <ul>
+                                <li><a href="huapoca.html"> Huapoca</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="p-creel"><a herf="">Sierra Tarahumara</a>
+                            <ul> 
+                                <li><a href="creel.html">Creel</a></li>
+                                <li><a href="barrancas.html">Barrancas del Cobre</a></li>  
+                            </ul>  
+                        </li>
+                </li>         
+        </ul>
+        <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </div>
+    </div>
+ </header>
+
+       <h1 class="centrar-texto tamaño-titulo">Contacto</h1>
+        <div class="imagenes " >
+            <img src="img/banner-contacto.jpg">   
+        </div>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="f-300 centrar-texto">Llena el formulario de Contacto</h2>
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea  id="mensaje"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser Contactado:</p>
+
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+
+                <p>Si eligió Teléfono, elija la fecha y la hora</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+        
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="btn-contacto">
+
+        </form>
+    </main> 
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="#">Registrarse</a>
+                <a href="#">Iniciar Sesion</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/animaciones.js"></script>
+
+</body>
+
+</html>

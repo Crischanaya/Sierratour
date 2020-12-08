@@ -77,6 +77,10 @@
     .centrar-texto {
         text-align: center;
     }
+    .contenido-centrado {
+        max-width: 800px;
+    }
+    
     
     /** Header */
     .cabecera{
@@ -956,6 +960,63 @@
     }
 
 
-
-
+  /** CONTACTO **/
+  .contacto{
+      line-height: 2;
+  }
+  .contacto p {
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+.contacto legend {
+    font-size: 2.5rem;
+    color: #4f4f4f;
+}
+.contacto label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+.contacto input:not([type="submit"]),
+.contacto
+textarea{
+    padding: 1.5rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.contacto input[type="radio"]{
+    width: auto;
+    margin: 0;
+    width: 24px; 
+    height: 24px;
+}
+.contacto textarea {
+    height: 20rem;
+}
+.forma-contacto {
+    max-width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
     
+.btn-contacto{
+    padding: 2rem 5rem;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #fff;
+    border-radius: 18px;
+    font-size: 2rem;
+    display: flex;
+    margin: 2rem auto;
+}
+.btn-contacto:hover{
+    background-color: rgba(0, 0, 0, 0.39);
+    
+}
