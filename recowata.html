@@ -103,6 +103,27 @@
   </li>
 </ul>
 
+
+jQuery('#css-demo').slippry({
+    // general elements & wrapper
+    slippryWrapper: '<div class="sy-box css-demo" />', // wrapper to wrap everything, including pager
+    // options
+    adaptiveHeight: true, // height of the sliders adapts to current slide
+    useCSS: true, // true, false -> fallback to js if no browser support
+    autoHover: false,
+    transition: 'horizontal'
+  });
+  
+  jQuery('#jquery-demo').slippry({
+    // general elements & wrapper
+    slippryWrapper: '<div class="sy-box jquery-demo" />', // wrapper to wrap everything, including pager
+    // options
+    adaptiveHeight: false, // height of the sliders adapts to current slide
+    useCSS: false, // true, false -> fallback to js if no browser support
+    autoHover: false,
+    transition: 'horizontal'
+  });
+
        <h1 class="centrar-texto tamaño-titulo">Más Sobre Nosotros</h1>
 
     <section class="cintillo ">         
