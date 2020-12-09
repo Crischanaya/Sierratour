@@ -56,13 +56,16 @@
         </div>
     </div>
  </header>
- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script src="../dist/slippry.min.js"></script>
-		<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
-		<meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="demo.css">
-    <link rel="stylesheet" href="../dist/slippry.css">
-	</head>
+ <div class="galeria" style="--w: 260px; --h: 300px;">
+    <input type="radio" name="navegacion" id="_1" checked>
+    <input type="radio" name="navegacion" id="_2">
+    <input type="radio" name="navegacion" id="_3">
+    <input type="radio" name="navegacion" id="_4"> 
+    <img src="img/recowata/recowata1.png" width="260" height="300" alt="Galeria CSS 1" />
+    <img src="img/recowata/recowata1.png" width="260" height="300" alt="Galeria CSS 2"  />
+    <img src="img/recowata/recowata1.png" width="260" height="300" alt="Galeria CSS 3" />
+    <img src="img/recowata/recowata1.png" width="260" height="300" alt="Galeria CSS 4" />
+  </div>
 	<body>
 		<section class="demo_wrapper">
 			<article class="demo">
@@ -75,48 +78,7 @@
 			</article>
 		</section>
 
-		<script>
-			$(function() {
-				var demo1 = $("#demo1").slippry({
-					// transition: 'fade',
-					// useCSS: true,
-					// speed: 1000,
-					// pause: 3000,
-					// auto: true,
-					// preload: 'visible',
-					// autoHover: false
-				});
-
-				$('.stop').click(function () {
-					demo1.stopAuto();
-				});
-
-				$('.start').click(function () {
-					demo1.startAuto();
-				});
-
-				$('.prev').click(function () {
-					demo1.goToPrevSlide();
-					return false;
-				});
-				$('.next').click(function () {
-					demo1.goToNextSlide();
-					return false;
-				});
-				$('.reset').click(function () {
-					demo1.destroySlider();
-					return false;
-				});
-				$('.reload').click(function () {
-					demo1.reloadSlider();
-					return false;
-				});
-				$('.init').click(function () {
-					demo1 = $("#demo1").slippry();
-					return false;
-				});
-			});
-		</script>
+		
 	</body>
 
 
