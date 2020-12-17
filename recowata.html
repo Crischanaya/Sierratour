@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 
 <html lang="es">
@@ -7,19 +6,19 @@
     <meta charset="UTF-8">
     <title>Sierra Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href={% static "/css/styles.css" %}>
-     <link rel="stylesheet" href={% static "/css/normalize.css" %}>
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/normalize.css">
      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="shortcut icon" href={% static "/img/favicon.ico" %}/>
-    <link rel="stylesheet" href={% static "/css/all.min.css" %}>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
     <header class="fondo-cabecera">
         <div class="cabecera">
             <div class="contenido-barra">
-                <a href="/index/">
-                <img class="logo" src={% static "/img/logo.png" %} alt="Logo Sierra Tours">
+                <a href="#">
+                <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
                 </a>
                 <span class="titulo t-letra2">Sierra Tours</span>
                 <div>
@@ -31,35 +30,44 @@
              </div>
         <div id="header" >
             <ul class="nav">                    
-                  <li><a href="/index/"> Inicio</a></li>
+                  <li><a href="index.html"> Inicio</a></li>
 
-                <li><a>Destinos</a>
+                <li><a herf="#">Destinos</a>
                     <ul>
-                        <li><a>Madera</a>        
+                        <li><a herf="#">Madera</a>        
                             <ul>
-                                <li><a href="/huapoca/"> Huapoca</a></li>
+                                <li><a href="huapoca.html"> Huapoca</a></li>
                             </ul>
                         </li>
                     
-                        <li class="p-creel"><a>Sierra Tarahumara</a>
+                        <li class="p-creel"><a herf="">Sierra Tarahumara</a>
                             <ul> 
-                                <li><a href="/creel/">Creel</a></li>
-                                <li><a href="/barrancas/">Barrancas del Cobre</a></li>  
+                                <li><a href="creel.html">Creel</a></li>
+                                <li><a href="barrancas.html">Barrancas del Cobre</a></li>  
                             </ul>  
                         </li>
                 </li>         
         </ul>
-        <li><a href="/registro/">Registrarse</a></li>
-                <li><a href="/login/">Iniciar Sesion</a></li>
-                <li><a href="/nosotros/">Nosotros</a></li>
-                <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
         </div>
     </div>
  </header>
 
-       <h1 class="centrar-texto tamaño-titulo">Huapoca Madera</h1>
+       <h1 class="centrar-texto tamaño-titulo">Recowata</h1>
 <div class="imagenes" >
-    <img src={% static "/img/huap1.png" %}>   
+    <div class="galeria" style="--w: 800px; --h: 400px;">
+        <input type="radio" name="navegacion" id="_1" checked>
+        <input type="radio" name="navegacion" id="_2">
+        <input type="radio" name="navegacion" id="_3">
+        <input type="radio" name="navegacion" id="_4"> 
+        <img src="img/recowata/recowata1.png" width="800" height="400" alt="Galeria CSS 1" />
+        <img src="img/recowata/recowata2.png" width="800" height="400" alt="Galeria CSS 2"  />
+        <img src="img/recowata/recowata3.png" width="800" height="400" alt="Galeria CSS 3" />
+        <img src="img/recowata/recowata1.png" width="800" height="400" alt="Galeria CSS 4" />
+      </div>
 </div>
  
 
@@ -79,7 +87,7 @@
             <br>
             Actualmente el manantial está acondicionado como balneario y cuenta con dos espaciosas albercas y un tobogán.
         </p>
-            <img  src={% static "/img/huapocabaner2.png" %} width="400" height="300" style="border-radius: 15px;">
+            <img  src="img/huapocabaner2.png" width="400" height="300" style="border-radius: 15px;">
     </div>
 
 
@@ -87,7 +95,7 @@
         <h2 class="caja">ACTIVIDADES</h2>
 
          <div class="acomodar">
-             <img style="border-radius: 15px;" src= {% static "/img/huap4.jpg" %}>
+             <img style="border-radius: 15px;" src="img/huap4.jpg" >
                  <div class="info-paquete">
                     <h3> Tour Vehiculos 4x4</h3>
                        <p></p>      
@@ -117,7 +125,7 @@
 
 
             <div class="acomodar">
-                <img style="border-radius: 15px;" src={% static "/img/huap3.png" %}>
+                <img style="border-radius: 15px;" src= "img/huap3.png" >
                     <div class="info-paquete">
                        <h3> Tour Cotorra Serrana</h3>
                           <p></p>      
@@ -150,7 +158,7 @@
 
  --              
             <div class="acomodar">
-                <img style="border-radius: 15px;" src={% static "/img/huap2.png" %}>
+                <img style="border-radius: 15px;" src= "img/huap2.png" >
                     <div class="info-paquete">
                        <h3>Toboganes</h3>
                           <p></p>      
@@ -186,15 +194,15 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="/index/">Inicio</a>
-                <a href="/registro/">Registrarse</a>
-                <a href="/login/">Iniciar Sesion</a>
-                <a href="/nosotros/">Nosotros</a>
+                <a href="index.html">Inicio</a>
+                <a href="#">Registrarse</a>
+                <a href="#">Iniciar Sesion</a>
+                <a href="nosotros.html">Nosotros</a>
             </nav>
             <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
         </div>
     </footer>
-    <script src={% static "/js/jquery.js" %}></script>
-    <script src={% static "/js/animaciones.js" %}></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -8,10 +8,10 @@
     <title>Sierra Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-     <link rel="stylesheet" href={% static "/css/styles.css" %}>
-     <link rel="stylesheet" href={% static "/css/normalize.css" %}>
-     <link rel="shortcut icon" href={% static "/img/favicon.ico" %}>
-     <link rel="stylesheet" href={% static "/css/all.min.css"%}>
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="shortcut icon" href="img/favicon.ico">
+     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
@@ -23,8 +23,8 @@ $("button.get-name").click(function(){
    });
 </script>
 <div class="contenido-barra">
-    <a href="/index/">
-    <img class="logo" src={% static "/img/logo.png" %} alt="Logo Sierra Tours">
+    <a href="#">
+    <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
     </a>
     <span class="titulo t-letra2">Sierra Tours</span>
     <div>
@@ -37,28 +37,28 @@ $("button.get-name").click(function(){
      </div>
 <div id="header" >
 <ul class="nav">                    
-    <li><a href="/index/"> Inicio</a></li>
+    <li><a href="index.html"> Inicio</a></li>
 
-    <li><a>Destinos</a>
+    <li><a href="#">Destinos</a>
         <ul>
-            <li><a>Madera</a>        
+            <li><a href="#">Madera</a>        
                 <ul>
-                    <li><a href="/huapoca/"> Huapoca</a></li>
+                    <li><a href="huapoca.html"> Huapoca</a></li>
                 </ul>
             </li>
         
-            <li class="p-creel"><a>Sierra Tarahumara</a>
+            <li class="p-creel"><a href="">Sierra Tarahumara</a>
                 <ul> 
-                    <li><a href="/creel/">Creel</a></li>
-                    <li><a href="/barrancas/">Barrancas del Cobre</a></li>  
+                    <li><a href="creel.html">Creel</a></li>
+                    <li><a href="barrancas.html">Barrancas del Cobre</a></li>  
                 </ul>  
             </li>
     </li>         
 </ul>
-    <li><a href="/registro/">Registrarse</a></li>
-    <li><a href="/login/">Iniciar Sesion</a></li>
-    <li><a href="/nosotros/">Nosotros</a></li>
-    <li><a href="/contacto/">Contacto</a></li>
+    <li><a href="#">Registrarse</a></li>
+    <li><a href="login.html">Iniciar Sesion</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
 </div>
 </div>
 
@@ -116,20 +116,8 @@ $("button.get-name").click(function(){
 </form>
 </main>
 
-<footer class="footer seccion">
-    <div class="contenedor contenedor-footer">
-        <nav class="navegacion">
-            <a href="/index/">Inicio</a>
-            <a href="/registro/">Registrarse</a>
-            <a href="/login/">Iniciar Sesion</a>
-            <a href="/nosotros/">Nosotros</a>
-        </nav>
-        <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
-    </div>
-</footer>
-
-<script src={% static "/js/jquery.js" %}></script>
-<script src={% static "/js/animaciones.js" %}></script>
+<script src="js/jquery.js"></script>
+<script src="js/animaciones.js"></script>
 
 
 </body>
