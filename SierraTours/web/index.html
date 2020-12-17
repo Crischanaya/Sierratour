@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 
 <html lang="es">
@@ -7,16 +8,16 @@
     <title>Sierra Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-     <link rel="stylesheet" href="css/styles.css">
-     <link rel="stylesheet" href="css/normalize.css">
-     <link rel="shortcut icon" href="img/favicon.ico">
-     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href={% static "/css/styles.css" %}>
+     <link rel="stylesheet" href={% static "/css/normalize.css" %}>
+     <link rel="shortcut icon" href={% static "/img/favicon.ico" %}>
+     <link rel="stylesheet" href={% static "/css/all.min.css" %}>
 </head>
 <body>
      <header class="site-header inicio">  
             <div class="contenido-barra">
-                <a href="#">
-                   <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
+                <a href="/index/">
+                   <img class="logo" src={% static "/img/logo.png" %} alt="Logo Sierra Tours">
                 </a>
                 <span class="titulo t-letra2">Sierra Tours</span>
                 <div>
@@ -29,38 +30,38 @@
             </div>
         <div id="header" class="show-bar">
             <ul class="nav">                    
-                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="/index/"> Inicio</a></li>
 
-                <li><a href="#">Destinos</a>
+                <li><a>Destinos</a>
                     <ul>
-                        <li><a href="#">Madera</a>        
+                        <li><a>Madera</a>        
                             <ul>
-                                <li><a href="huapoca.html"> Huapoca</a></li>
+                                <li><a href="/huapoca/"> Huapoca</a></li>
                             </ul>
                         </li>
                     
-                        <li class="p-creel"><a href="#">Sierra Tarahumara</a>
+                        <li class="p-creel"><a>Sierra Tarahumara</a>
                             <ul> 
-                                <li><a href="creel.html">Creel</a></li>
-                                <li><a href="barrancas.html">Barrancas del Cobre</a></li> 
-                                <li><a href="recowata.html">Recowata</a></li>  
+                                <li><a href="/creel/">Creel</a></li>
+                                <li><a href="/barrancas/">Barrancas del Cobre</a></li> 
+                                <li><a href="/recowata/">Recowata</a></li>  
                             </ul>  
                         </li>
                 </li>         
            </ul>
-                <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="login.html">Iniciar Sesion</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/registro/">Registrarse</a></li>
+                <li><a href="/login/">Iniciar Sesion</a></li>
+                <li><a href="/nosotros/">Nosotros</a></li>
+                <li><a href="/contacto/">Contacto</a></li>
          </div>
      </div>
 
      <div>
         <h1 class="t-letra2">Paquetes de viajes</h1>
          <div class="paquetes-principales">
-            <a href="huapoca.html"><img class="zoom borde"   src="img/huapocabaner.jpg"></a>
-            <a href="barrancas.html"><img class="zoom borde" src="img/creel1.jpg" ></a>
-            <a href="creel.html"><img class="zoom borde"  src="img/creelbaner.jpg" ></a>
+            <a href="/huapoca/"><img class="zoom borde"   src={% static "/img/huapocabaner.jpg" %}></a>
+            <a href="/barrancas/"><img class="zoom borde" src={% static "/img/creel1.jpg" %}></a>
+            <a href="/creel/"><img class="zoom borde"  src={% static "/img/creelbaner.jpg" %}></a>
          </div>
 
          <div class="paquetes-movil">
@@ -71,7 +72,7 @@
              &#62
          </div>
  
-           <a class="redireccion" href="barrancas.html"><img class="zoom borde change" src="img/creel1.jpg" alt="imagen"></a>
+           <a class="redireccion" href="/barrancas/"><img class="zoom borde change" src={% static "/img/creel1.jpg" %} alt="imagen"></a>
          </div>
 
      </div>
@@ -82,7 +83,7 @@
 
     <div class="iconos-nosotros">
         <div class="icono">
-            <img class="zoom-img" src="img/seguridad.jpg" alt="Seguridad">
+            <img class="zoom-img" src={% static "/img/seguridad.jpg" %} alt="Seguridad">
             <h3>Seguridad</h3>
             <p> Nuestra empresa siempre busca la seguridad de nuestros clientes, por lo tanto lo ponemos como prioridad en cada uno de nuestros paquetes,
                 todas las herramientas de seguridad estan certificadas y avaladas para salvaguardar su vida <br>Dichas herramientas reciben su mantenimiento 
@@ -91,7 +92,7 @@
         </div>
 
         <div class="icono">
-            <img class="zoom-img" src="img/precio.jpg" alt="Precio">
+            <img class="zoom-img" src={% static "/img/precio.jpg" %} alt="Precio">
             <h3>El Mejor Precio</h3>
             <p>Ofrecemos basicamente lo mejor de lo mejor, desde los paquetes más extremos para personas aventureras que buscan adrenalina, asi como
                 tambien paquetes familiares para que todos se diviertan al maximo y siempre ajustandose a su bolsillo, por lo tanto contamos con paquetes
@@ -100,7 +101,7 @@
         </div>
 
         <div class="icono">
-            <img class="zoom-img" src="img/tiempo.jpg" alt="Tiempo">
+            <img class="zoom-img" src={% static "/img/tiempo.jpg" %} alt="Tiempo">
             <h3>A Tiempo</h3>
             <p>Nuestra empresa tambien esta comprometida con la puntualidad es necesario ya que cada uno de nuestros paquetes cuenta con un tiempo determinado
                 y es muy importante que todo ese tiempo se ecuentre administrado correctamente con el obejtivo de que ustedes como nuestros clientes no se pierdan 
@@ -114,7 +115,7 @@
     <div class="contenedor contenido-contacto">
         <h2>Encuentra el paquete que mas te guste</h2>
         <p>Llena el formulario de registro para escoger tus paquetes favoritos </p>
-        <a href="registro.html" class="boton boton-amarillo">Registrate</a>
+        <a href="/registro/" class="boton boton-amarillo">Registrate</a>
     </div>
 </section>
 
@@ -126,13 +127,12 @@
 
         <article class="entrada-blog">
             <div class="imagen">
-                <img class="zoom-img"  src="img/recowata.jpg" alt="Entrada de blog">
+                <img class="zoom-img"  src={% static "/img/recowata.jpg" %} alt="Entrada de blog">
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Aguas Termales Recowata</h4>
-                </a>
-                <p>Escrito el: <span> 12/10/2020 </span> por: <span> Noel </span> </p>
+                
+                <h4>Aguas Termales Recowata</h4>
+                
                 <p> A 15 km de Creel Chihuahua se encuentran las aguas termales de Recowata con una vista al majestuoso cañón de Tararecua
                     y al fondo en un descenso a pie de 30 minutos están las albercas llamadas recowata que mantienen su temperatura a 35° 
                     todo el año.   
@@ -142,13 +142,12 @@
 
         <article class="entrada-blog">
             <div class="imagen">
-                <img class="zoom-img"  src="img/balneario.jpeg" alt="Entrada de blog">
+                <img class="zoom-img"  src={% static "/img/balneario.jpeg" %} alt="Entrada de blog">
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
-                    <h4>Balneario Huapoca</h4>
-                </a>
-                <p>Escrito el: <span> 15/09/2020 </span> por: <span> Angel </span> </p>
+                
+                <h4>Balneario Huapoca</h4>
+                
                 <p> La localidad de Balneario Huapoca está situado en el Municipio de Madera (en el Estado de Chihuahua). 
                     En la lista de los pueblos más poblados de todo el municipio, es el número 288 del ránking. Balneario Huapoca está a 1700 metros de altitud.
                 </p>
@@ -174,19 +173,19 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="#">Registrarse</a>
-                <a href="#">Iniciar Sesion</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="/index/">Inicio</a>
+                <a href="/registro/">Registrarse</a>
+                <a href="/login/">Iniciar Sesion</a>
+                <a href="/nosotros/">Nosotros</a>
             </nav>
             <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
         </div>
     </footer>
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/animaciones.js"></script>
-    <script src="js/carrousel-movil.js"></script>
+    <script src={% static "/js/jquery.js" %}></script>
+    <script src={% static "/js/animaciones.js" %}></script>
+    <script src={% static "/js/carrousel-movil.js" %}></script>
 
 </body>
 </html>

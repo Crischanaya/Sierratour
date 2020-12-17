@@ -1,22 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Sierra Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/styles.css">
-     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href={% static "/css/styles.css" %}>
+     <link rel="stylesheet" href={% static "/css/normalize.css" %}>
      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href={% static "/img/favicon.ico" %}/>
+    <link rel="stylesheet" href={% static "/css/all.min.css" %}>
 </head>
 
 <body>
     <header class="fondo-cabecera">
         <div class="cabecera">
             <div class="contenido-barra">
-                <a href="#">
-                <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
+                <a href="/index/">
+                <img class="logo" src={% static "/img/logo.png" %} alt="Logo Sierra Tours">
                 </a>
                 <span class="titulo t-letra2">Sierra Tours</span>
                 <div>
@@ -28,35 +29,35 @@
              </div>
         <div id="header" >
             <ul class="nav">                    
-                  <li><a href="index.html"> Inicio</a></li>
+                  <li><a href="/index/"> Inicio</a></li>
 
-                <li><a herf="#">Destinos</a>
+                <li><a>Destinos</a>
                     <ul>
-                        <li><a herf="#">Madera</a>        
+                        <li><a>Madera</a>        
                             <ul>
-                                <li><a href="huapoca.html"> Huapoca</a></li>
+                                <li><a href="/huapoca/"> Huapoca</a></li>
                             </ul>
                         </li>
                     
-                        <li class="p-creel"><a herf="">Sierra Tarahumara</a>
+                        <li class="p-creel"><a>Sierra Tarahumara</a>
                             <ul> 
-                                <li><a href="creel.html">Creel</a></li>
-                                <li><a href="barrancas.html">Barrancas del Cobre</a></li>  
+                                <li><a href="/creel/">Creel</a></li>
+                                <li><a href="/barrancas/">Barrancas del Cobre</a></li>  
                             </ul>  
                         </li>
                 </li>         
         </ul>
-        <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="login.html">Iniciar Sesion</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="/registro/">Registrarse</a></li>
+                <li><a href="/login/">Iniciar Sesion</a></li>
+                <li><a href="/nosotros/">Nosotros</a></li>
+                <li><a href="/contacto/">Contacto</a></li>
         </div>
     </div>
  </header>
 
        <h1 class="centrar-texto tamaño-titulo">Contacto</h1>
         <div class="imagenes " >
-            <img src="img/banner-contacto.jpg">   
+            <img src={% static "img/banner-contacto.jpg" %}>   
         </div>
 
     <main class="contenedor seccion contenido-centrado">
@@ -109,17 +110,17 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="#">Registrarse</a>
-                <a href="#">Iniciar Sesion</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="/index/">Inicio</a>
+                <a href="/registro/">Registrarse</a>
+                <a href="/login/">Iniciar Sesion</a>
+                <a href="/nosotros/">Nosotros</a>
             </nav>
             <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
         </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/animaciones.js"></script>
+    <script src={% static "/js/jquery.js" %}></script>
+    <script src={% static "/js/animaciones.js" %}></script>
 
 </body>
 

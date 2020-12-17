@@ -1,22 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Sierra Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/styles.css">
-     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href={% static "/css/styles.css" %}>
+     <link rel="stylesheet" href={% static "/css/normalize.css" %}>
      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href={% static "/img/favicon.ico" %}/>
+    <link rel="stylesheet" href={% static "/css/all.min.css" %}>
 </head>
 
 <body>
     <header class="fondo-cabecera">
         <div class="cabecera">
             <div class="contenido-barra">
-                <a href="#">
-                <img class="logo" src="img/logo.png" alt="Logo Sierra Tours">
+                <a href="/index/">
+                <img class="logo" src={% static "/img/logo.png" %} alt="Logo Sierra Tours">
                 </a>
                 <span class="titulo t-letra2">Sierra Tours</span>
                 <div>
@@ -56,7 +57,7 @@
 
        <h1 class="centrar-texto tamaño-titulo">Creel Pueblo Mágico</h1>
         <div class="imagenes" >
-            <img src="img/creelbarra.jpg">   
+            <img src={% static "/img/creelbarra.jpg" %}>   
         </div>
 
   <main class="contenedor">
@@ -70,7 +71,7 @@
                 Enrique Creel. En la esquina noreste de la plaza esperan tu visita la iglesia neogótica de 
                 Cristo Rey y su vecina, la iglesia del siglo XX, Nuestra Señora de Lourdes.
             </p>
-            <img  src="img/casc.jpg" width="400" height="300" style="border-radius: 15px;">
+            <img  src={% static "/img/casc.jpg" %} width="400" height="300" style="border-radius: 15px;">
         </div>
         
         
@@ -78,7 +79,7 @@
             <h2 class="caja">ACTIVIDADES</h2>
 
             <div class="acomodar">
-                <img style="border-radius: 15px;" src=img/creelba.jpg >
+                <img style="border-radius: 15px;" src={% static "/img/creelba.jpg" %} >
                     <div class="info-paquete">
                         <h3> Tour Lago de Arareco</h3>
                         <p>Lugares que Visitaras:</p>      
@@ -108,7 +109,7 @@
 
 
                 <div class="acomodar">
-                    <img style="border-radius: 15px;" src= "img/maranat.jpg" >
+                    <img style="border-radius: 15px;" src= {% static "/img/maranat.jpg" %}>
                         <div class="info-paquete">
                         <h3> Maravillas Naturales</h3>
                             <p>Lugares que Visitaras:</p>      
@@ -136,7 +137,7 @@
                     </div>   
                 </div>
                 <div class="acomodar">
-                    <img style="border-radius: 15px;" src= "img/valle_monje.jpg" >
+                    <img style="border-radius: 15px;" src= {% static "/img/valle_monje.jpg" %}>
                         <div class="info-paquete">
                         <h3> Valle De Los Monjes</h3>
                             <p>Reserva ahora y paga después</p>      
@@ -178,8 +179,8 @@
         </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/animaciones.js"></script>
+    <script src={% static "/js/jquery.js" %}></script>
+    <script src={% static "/js/animaciones.js" %}></script>
 
 </body>
 
