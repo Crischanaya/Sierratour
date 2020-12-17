@@ -1013,53 +1013,7 @@ textarea{
     background-color: rgba(0, 0, 0, 0.39);
     
 }
-@-webkit-keyframes left-right {
-    0% {
-      -webkit-transform: translateY(-20%) translateX(-10%);
-              transform: translateY(-20%) translateX(-10%); }
-    100% {
-      -webkit-transform: translateY(0%) translateX(10%);
-              transform: translateY(0%) translateX(10%); } }
-  @-o-keyframes left-right {
-    0% {
-      -o-transform: translateY(-20%) translateX(-10%);
-         transform: translateY(-20%) translateX(-10%); }
-    100% {
-      -o-transform: translateY(0%) translateX(10%);
-         transform: translateY(0%) translateX(10%); } }
-  @keyframes left-right {
-    0% {
-      -webkit-transform: translateY(-20%) translateX(-10%);
-           -o-transform: translateY(-20%) translateX(-10%);
-              transform: translateY(-20%) translateX(-10%); }
-    100% {
-      -webkit-transform: translateY(0%) translateX(10%);
-           -o-transform: translateY(0%) translateX(10%);
-              transform: translateY(0%) translateX(10%); } }
-  @-webkit-keyframes right-left {
-    0% {
-      -webkit-transform: translateY(0%) translateX(10%);
-              transform: translateY(0%) translateX(10%); }
-    100% {
-      -webkit-transform: translateY(-20%) translateX(-10%);
-              transform: translateY(-20%) translateX(-10%); } }
-  @-o-keyframes right-left {
-    0% {
-      -o-transform: translateY(0%) translateX(10%);
-         transform: translateY(0%) translateX(10%); }
-    100% {
-      -o-transform: translateY(-20%) translateX(-10%);
-         transform: translateY(-20%) translateX(-10%); } }
-  @keyframes right-left {
-    0% {
-      -webkit-transform: translateY(0%) translateX(10%);
-           -o-transform: translateY(0%) translateX(10%);
-              transform: translateY(0%) translateX(10%); }
-    100% {
-      -webkit-transform: translateY(-20%) translateX(-10%);
-           -o-transform: translateY(-20%) translateX(-10%);
-              transform: translateY(-20%) translateX(-10%); } }
-  /* added to the original element calling slippry */
+
   .sy-box.sy-loading {
     background: url("/images/sy-loader.gif") 50% 50% no-repeat;
     -webkit-background-size: 32px 32px;
